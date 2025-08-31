@@ -17,6 +17,7 @@ using var client = new DaprClientBuilder()
     .UseHttpEndpoint($"http://localhost:{DaprHttpPort}") // Or DAPR_HTTP_PORT environment variable
     .Build();
 
+
 var messageCount = 0;
 while (true)
 {
